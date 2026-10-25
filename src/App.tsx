@@ -39,13 +39,8 @@ export const App: React.FC = () => {
 
   return (
     <div className="relative min-h-screen bg-navy-950 text-slate-100 selection:bg-cyan-500/30 selection:text-cyan-200">
-      {/* Dynamic Interactive Neural Canvas Background */}
       <NeuralBackground />
-
-      {/* Navigation Header */}
       <Navbar activeSection={activeSection} />
-
-      {/* Main Content Sections */}
       <main className="relative z-10">
         <Hero />
         <About />
@@ -56,8 +51,6 @@ export const App: React.FC = () => {
         <WhatIBring />
         <Contact />
       </main>
-
-      {/* Footer */}
       <Footer />
     </div>
   );
